@@ -23,28 +23,22 @@ const AboutUsPage = () => {
         <section className="who-we-are section-padding">
           <div className="container section-container">
             <h2 className="section-heading">Who We Are</h2>
-            <p className="subtitle">
-              Vertex Globals is a leading BPO company dedicated to empowering
-              businesses with scalable and efficient outsourcing solutions,
-              enabling them to focus on core competencies and achieve sustained
-              growth.
-            </p>
             <div className="content">
               <div className="about-us-text">
                 <p className="text-content">
-                Founded with a vision to redefine business process outsourcing, Vertex Globals brings together a team of seasoned professionals and cutting-edge technology. We specialize in delivering bespoke solutions that address the unique challenges of modern enterprises, from startups to large corporations. Our commitment to excellence, innovation, and client satisfaction drives every partnership.
+                  Founded with a vision to redefine business process outsourcing, Vertex Globals brings together a team of seasoned professionals and cutting-edge technology. We specialize in delivering bespoke solutions that address the unique challenges of modern enterprises, from startups to large corporations. Our commitment to excellence, innovation, and client satisfaction drives every partnership.
                 </p>
                 <p className="text-content">
-                We believe that effective outsourcing is more than just cost savings—it's about strategic partnerships that foster efficiency, agility, and competitive advantage. Our comprehensive suite of services is designed to streamline operations, enhance customer experiences, and unlock new opportunities for our clients across diverse industries.
+                  We believe that effective outsourcing is more than just cost savings—it's about strategic partnerships that foster efficiency, agility, and competitive advantage. Our comprehensive suite of services is designed to streamline operations, enhance customer experiences, and unlock new opportunities for our clients across diverse industries.
                 </p>
-                <Link href="/about-us" className="btn">
+                {/* <Link href="/about-us" className="btn">
                   Learn More About Us
-                </Link>
+                </Link> */}
               </div>
-              <div className="image">
+              <div className="team-image">
                 <Image
-                  src="https://ik.imagekit.io/qamrdwkcj/assets/cdn/images/main-banner.webp"
-                  alt="Who We Are"
+                  src="https://ik.imagekit.io/qamrdwkcj/assets/cdn/images/team-image.webp"
+                  alt="team image"
                   width={450}
                   height={300}
                 />
@@ -55,14 +49,16 @@ const AboutUsPage = () => {
 
         {/* Our Purpose Section */}
         <section className="our-purpose section-padding">
-          <div className="container">
-            <h2 className="section-title">Our Purpose</h2>
+          <div className="container section-container">
+            <h2 className="section-heading">
+              Our Purpose
             <p className="subtitle">
               Driving excellence through clear objectives and forward-thinking goals.
             </p>
+            </h2>
             <div className="cards">
               <div className="card">
-                <h3>Our Mission</h3>
+                <h3 className="card-title">Our Mission</h3>
                 <p>
                   To empower businesses globally with seamless, high-quality outsourcing
                   solutions that enhance operational efficiency, reduce costs, and
@@ -71,7 +67,7 @@ const AboutUsPage = () => {
                 </p>
               </div>
               <div className="card">
-                <h3>Our Vision</h3>
+                <h3 className="card-title">Our Vision</h3>
                 <p>
                   To be the most trusted and innovative global partner in business process
                   outsourcing, recognized for our commitment to client success,
@@ -83,9 +79,9 @@ const AboutUsPage = () => {
         </section>
 
         {/* Core Values Section */}
-        <section className="core-values">
-          <div className="container">
-            <h2 className="section-title">Our Core Values</h2>
+        <section className="core-values section-padding">
+          <div className="container section-container">
+            <h2 className="section-heading">Our Core Values</h2>
             <p className="subtitle">
               The principles that guide our every action and decision at Vertex Globals.
             </p>
@@ -120,9 +116,9 @@ const AboutUsPage = () => {
         </section>
 
         {/* Leadership Team Section */}
-        <section className="leadership-team">
-          <div className="container">
-            <h2 className="section-title">Our Leadership Team</h2>
+        <section className="leadership-team section-padding">
+          <div className="container section-container">
+            <h2 className="section-title section-heading">Our Leadership Team</h2>
             <p className="subtitle">
               Meet the dedicated individuals guiding Vertex Globals towards a future of
               innovation and success.
@@ -130,7 +126,7 @@ const AboutUsPage = () => {
             <div className="team-grid">
               <div className="team-card">
                 <Image
-                  src="https://ik.imagekit.io/qamrdwkcj/assets/cdn/images/main-banner.webp"
+                  src="https://ik.imagekit.io/qamrdwkcj/assets/cdn/images/team-image.webp"
                   alt="Emily Rodriguez"
                   width={150}
                   height={150}

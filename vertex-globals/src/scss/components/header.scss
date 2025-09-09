@@ -154,10 +154,10 @@ header {
       border-radius: 50%;
       transition: all 0.2s ease;
 
-      &:hover {
-        background-color: #f3f4f6;
-        color: $color-primary;
-      }
+      // &:hover {
+      //   background-color: #f3f4f6;
+      //   color: $color-primary;
+      // }
 
       .close-icon {
         line-height: 1;
