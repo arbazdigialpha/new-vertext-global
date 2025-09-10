@@ -33,7 +33,7 @@ const Services = () => {
   ];
 
   return (
-    <section className="services-section section-padding">
+    <section className="services-section section-padding bg-light-gray">
       <div className="container section-container">
         <h2 id="services-heading" aria-labelledby="services-heading" className="section-heading" data-aos="zoom-in">Our Services</h2>
         <div className="services__list card-arrangment">

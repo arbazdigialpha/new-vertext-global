@@ -32,7 +32,7 @@ const WhyChooseUs = () => {
     <section className="home-why section-padding" aria-labelledby="why-choose-us-heading">
       <div className="section-container">
         <h2 id="why-choose-us-heading" className="section-heading" data-aos="zoom-in">Why Choose Us?</h2>
-        <div className="why-choose-card card-arrangment">
+        <div className="why-choose-card card-arrangment small-card">
           {items.map((item, index) => (
             <article
               className="why-card"
@@ -42,8 +42,8 @@ const WhyChooseUs = () => {
               data-aos-duration="600"
             >
               <span> {item.icon} </span>
-              <h3 className="why-card-title">{item.title}</h3>
-              <p className="why-card-text">{item.text}</p>
+              <h3 className="why-card-title card-title">{item.title}</h3>
+              <p className="why-card-text card-content">{item.text}</p>
             </article>
           ))}
         </div>

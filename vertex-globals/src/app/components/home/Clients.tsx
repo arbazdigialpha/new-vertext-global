@@ -2,7 +2,7 @@ import Carousel from "../Carousel";
 
 const Clients = () => {
   return (
-    <section aria-label="Client logos and testimonials" className="container section-padding clients-section">
+    <section aria-label="Client logos and testimonials " className="container section-padding clients-section bg-light-gray">
       <h2 className="section-heading" data-aos="zoom-in">Our Clients</h2>
 
       <div>

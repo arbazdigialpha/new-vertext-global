@@ -22,8 +22,6 @@ body {
   min-width: 100%;
 }
 .vertex-globale {
-  // max-width: 1440px;
-  // margin: 0 auto;
   width: 100%; 
 }
 a {
@@ -33,6 +31,9 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
+}
+.bg-light-gray{
+  background-color: $color-bg-light;
 }
 .container {
   width: 100%;
@@ -55,31 +56,36 @@ img {
   width: 100%;
   font-family: "Times New Roman", serif ;
 }
+.small-card{
+  .card-title{
+    color: $color-text-dark;
+    font-size: 17px;
+    font-weight: 600;
+    margin: 0 0 4px;
+  }
+  .card-content{
+    color: $color-text-light;
+    font-size: 14px;
+    margin: 0;
+  }
+}
 // Responsive breakpoints for better mobile experience
 @media (min-width: 768px) {
-    // .container {
-    //   padding: 0 40px;
-    // }
-
   .section-container {
     padding: 0 40px;
   }
 
   .section-padding {
-    padding: 48px 32px 64px;
+    padding: 48px 16px 64px;
   }
 }
 @media (min-width: 1024px) {
-  // .container {
-  //   padding: 0 60px;
-  // }
-
   .section-container {
     padding: 0 60px;
   }
 
   .section-padding {
-    padding: 48px 60px 64px;
+    padding: 48px 32px 64px;
   }
 }
 @media (min-width: 1440px) {
@@ -92,6 +98,6 @@ img {
     padding: 0 32px;
   }
   .section-padding {
-    padding: 48px 80px 64px;
+    padding: 48px 48px 64px;
   }
 }

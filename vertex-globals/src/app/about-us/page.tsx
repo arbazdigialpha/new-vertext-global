@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Seo from '../../components/Seo';
 import "../../scss/about-us.scss";
+import { Target , Lightbulb } from "lucide-react";
 
 const AboutUsPage = () => {
   const pageUrl = '/about-us';
@@ -48,7 +49,7 @@ const AboutUsPage = () => {
         </section>
 
         {/* Our Purpose Section */}
-        <section className="our-purpose section-padding">
+        <section className="our-purpose section-padding bg-light-gray">
           <div className="container section-container">
             <h2 className="section-heading">
               Our Purpose
@@ -58,8 +59,9 @@ const AboutUsPage = () => {
             </h2>
             <div className="cards">
               <div className="card">
+              <Target color="#1874d2" strokeWidth={2} />
                 <h3 className="card-title">Our Mission</h3>
-                <p>
+                <p className="card-desc">
                   To empower businesses globally with seamless, high-quality outsourcing
                   solutions that enhance operational efficiency, reduce costs, and
                   foster sustainable growth, allowing our clients to excel in their
@@ -67,8 +69,9 @@ const AboutUsPage = () => {
                 </p>
               </div>
               <div className="card">
+                <Lightbulb color="#005bb5" strokeWidth={2} />
                 <h3 className="card-title">Our Vision</h3>
-                <p>
+                <p className="card-desc">
                   To be the most trusted and innovative global partner in business process
                   outsourcing, recognized for our commitment to client success,
                   technological advancement, and an ethical, empowered workforce.
@@ -86,27 +89,27 @@ const AboutUsPage = () => {
               The principles that guide our every action and decision at Vertex Globals.
             </p>
             <div className="values-grid">
-              <div className="value-card">
-                <h4>Efficiency</h4>
-                <p>
+              <div className="value-card small-card">
+                <h3 className="value-card-title card-title">Efficiency</h3>
+                <p className="card-content">
                   Streamlining processes to deliver optimal results quickly and effectively.
                 </p>
               </div>
-              <div className="value-card">
-                <h4>Accuracy</h4>
-                <p>
+              <div className="value-card small-card">
+                <h3 className="value-card-title card-title">Accuracy</h3>
+                <p className="card-content">
                   Ensuring precision and meticulous attention to detail in all tasks.
                 </p>
               </div>
-              <div className="value-card">
-                <h4>Integrity</h4>
-                <p>
+              <div className="value-card small-card">
+                <h3 className="value-card-title card-title">Integrity</h3>
+                <p className="card-content">
                   Operating with honesty, transparency, and the highest ethical standards.
                 </p>
               </div>
-              <div className="value-card">
-                <h4>Client-Centricity</h4>
-                <p>
+              <div className="value-card small-card">
+                <h3 className="value-card-title card-title">Client-Centricity</h3>
+                <p className="card-content">
                   Prioritizing client needs and building lasting partnerships through
                   exceptional service.
                 </p>
@@ -116,7 +119,7 @@ const AboutUsPage = () => {
         </section>
 
         {/* Leadership Team Section */}
-        <section className="leadership-team section-padding">
+        <section className="leadership-team section-padding bg-light-gray">
           <div className="container section-container">
             <h2 className="section-title section-heading">Our Leadership Team</h2>
             <p className="subtitle">

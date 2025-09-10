@@ -67,7 +67,6 @@
 
 // Services Section
 .services-section {
-  background-color: $color-bg-light;
 
   .card {
     @include card;
@@ -110,25 +109,11 @@
     padding: 16px;
     text-align: left;
     min-height: 147px;
-
-    .why-card-title {
-      color: $color-text-dark;
-      font-size: 17px;
-      font-weight: 600;
-      margin: 0 0 4px;
-    }
-
-    .why-card-text {
-      color: $color-text-light;
-      font-size: 14px;
-      margin: 0;
-    }
   }
 }
 
 // Clients Section
 .clients-section {
-  background-color: $color-bg-light;
 
   .client-logos {
     display: flex;
