@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Seo from '../../components/Seo';
 import "../../scss/about-us.scss";
-import { Target , Lightbulb } from "lucide-react";
+import { Target , Lightbulb , TrendingUp , Gem , Handshake , Users } from "lucide-react";
 
 const AboutUsPage = () => {
   const pageUrl = '/about-us';
@@ -90,24 +90,28 @@ const AboutUsPage = () => {
             </p>
             <div className="values-grid">
               <div className="value-card small-card">
+                <span> <TrendingUp color="#005bb5" strokeWidth={2} /> </span>
                 <h3 className="value-card-title card-title">Efficiency</h3>
                 <p className="card-content">
                   Streamlining processes to deliver optimal results quickly and effectively.
                 </p>
               </div>
               <div className="value-card small-card">
+                <span> <Gem color="#005bb5" strokeWidth={2} /> </span>
                 <h3 className="value-card-title card-title">Accuracy</h3>
                 <p className="card-content">
                   Ensuring precision and meticulous attention to detail in all tasks.
                 </p>
               </div>
               <div className="value-card small-card">
+                <span> <Handshake color="#005bb5" strokeWidth={2} /> </span>
                 <h3 className="value-card-title card-title">Integrity</h3>
                 <p className="card-content">
                   Operating with honesty, transparency, and the highest ethical standards.
                 </p>
               </div>
               <div className="value-card small-card">
+                <span> <Users color="#005bb5" strokeWidth={2} /> </span>
                 <h3 className="value-card-title card-title">Client-Centricity</h3>
                 <p className="card-content">
                   Prioritizing client needs and building lasting partnerships through

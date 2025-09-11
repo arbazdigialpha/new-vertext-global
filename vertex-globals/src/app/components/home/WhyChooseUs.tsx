@@ -1,26 +1,27 @@
 "use client"
 import { CheckIcon, ClockIcon, CurrencyInrIcon, ShieldCheckIcon } from "@phosphor-icons/react";
+import { CircleGauge , Check , ShieldCheck , IndianRupee  } from "lucide-react";
 
 const items = [
   {
-    icon: <ClockIcon size={24} />,
+    icon: <CircleGauge color="#1874d2" strokeWidth={2} />,
     title: "Speed",
     text:
       "We deliver solutions quickly and efficiently, ensuring your business stays ahead.",
   },
   {
-    icon: <CheckIcon size={24} />,
+    icon: <Check color="#1874d2" strokeWidth={2} />,
     title: "Accuracy",
     text:
       "Our processes are designed for precision, minimizing errors and maximizing quality.",
   },
   {
-    icon: <ShieldCheckIcon size={24} />,
+    icon: <ShieldCheck color="#1874d2" strokeWidth={2} />,
     title: "Reliability",
     text: "Count on us for consistent and dependable service, every time.",
   },
   {
-    icon: <CurrencyInrIcon size={24} />,
+    icon: <IndianRupee color="#1874d2" strokeWidth={2} />,
     title: "Cost-Effectiveness",
     text:
       "Optimize your budget with our competitive pricing and value-driven solutions.",
