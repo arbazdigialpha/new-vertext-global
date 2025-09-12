@@ -1,0 +1,190 @@
+@use './variables' as *;
+
+.about-us {
+  .who-we-are {
+    padding: 64px 16px;
+  }
+
+  .subtitle {
+    text-align: center;
+    color: $color-text-light;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: var(--font-nunito);
+    margin-top: 12px;
+  }
+
+  .content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 32px;
+    margin-top: 32px;
+
+    .about-us-text {
+      flex: 1;
+
+      .text-content {
+        margin-bottom: 32px;
+        color: $color-text-dark;
+        text-align: justify;
+        font-weight: 300;
+      }
+    }
+
+    .team-image {
+      text-align: right;
+
+      img {
+        border-radius: 6px;
+        box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1F;
+      }
+    }
+  }
+
+  .our-purpose {
+    .section-container{
+      padding-inline: 32px;
+    }
+  }
+    .cards {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 32px;
+      margin-top: 40px;
+
+      .card {
+        background: $color-white;
+        padding: 32px;
+        border-radius: 4px;
+        box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1F;
+        width: 432px;
+        min-height : 255px;
+
+        .card-title {
+          margin-block: 9px 12px;
+          font-size: 30px; 
+          line-height: 36px; 
+          font-weight: 700;
+          color: $color-text-dark;
+        }
+        .card-desc{
+          font-size: 14px;
+          color: $color-text-light;
+        }
+      }
+    }
+
+  .core-values {
+
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+
+      .value-card-title{
+        color: $color-text-dark;
+      }
+      .value-card {
+        background: #fff;
+        padding: 1.5rem;
+        border: 1px solid #eee;
+        border-radius: 8px;
+      }
+    }
+  }
+
+  .leadership-team {
+    padding: 4rem 1rem;
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+      text-align: center;
+
+      .team-card {
+        .team-img {
+          border-radius: 50%;
+          margin-bottom: 1rem;
+        }
+
+        h4 {
+          margin-bottom: 0.3rem;
+        }
+
+        .role {
+          color: #2563eb;
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+
+  // Media query start
+  @media (min-width: 768px) and (max-width: 1024px) {
+
+    .team-image,
+    .about-us-text {
+      width: 50%;
+    }
+
+    .team-image {
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .our-purpose {
+      .section-container{
+        padding-inline: 24px;
+      }
+    }
+    .who-we-are {
+      .content {
+        flex-wrap: wrap;
+        gap: 20px;
+
+        .about-us-text {
+          min-width: 100%;
+        }
+
+        .team-image {
+          text-align: center;
+          flex: 1;
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
+    .cards{
+      .card{
+        padding: 24px;
+      }
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 991px){
+    .our-purpose {
+      .section-container{
+        padding-inline: 24px;
+      }
+    }
+    .cards{
+      gap: 24px;
+      .card{
+        width: 340px;
+        padding: 24px;
+      }
+    }
+  }
+}
+
+// Media query end
