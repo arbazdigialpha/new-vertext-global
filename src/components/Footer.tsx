@@ -1,7 +1,10 @@
 'use client'
-import { FacebookLogoIcon, InstagramLogoIcon, LinkedinLogoIcon, TwitterLogoIcon, XLogoIcon } from "@phosphor-icons/react";
 import Image from "next/image";
 import Link from "next/link";
+import FacebookIcon from "./icons/FacebookIcon";
+import XTwitterIcon from "./icons/XTwitterIcon";
+import LinkedinIcon from "./icons/LinkedinIcon";
+import InstagramIcon from "./icons/InstagramIcon";
 
 const Footer = () => {
   return (
@@ -24,18 +27,18 @@ const Footer = () => {
             Delivering Scalable BPO Solutions for a Global Market.
           </p>
           <div className="social-icons">
-            <a className="icons x-twitter" href="#">
-            <XLogoIcon size={24} weight="fill" />
-            </a>
-            <a className="icons facebook" href="#">
-              <FacebookLogoIcon size={24} weight="fill" />
-            </a>
-            <a className="icons instagram" href="#">
-              <InstagramLogoIcon size={24} weight="fill" />
-            </a>
-            <a className="icons linkedin" href="#">
-              <LinkedinLogoIcon size={24} weight="fill" />
-            </a>
+            <Link className="icons facebook" href="#">
+              <FacebookIcon size={24} color="#fff" />
+            </Link>
+            <Link className="icons instagram" href="#">
+              <InstagramIcon size={22} color="#fff" />
+            </Link>
+            <Link className="icons x-twitter" href="#">
+              <XTwitterIcon size={20} color="#fff" />
+            </Link>
+            <Link className="icons linkedin" href="#">
+              <LinkedinIcon size={20} color="#fff" />
+            </Link>
           </div>
         </div>
 

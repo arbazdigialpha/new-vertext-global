@@ -92,10 +92,6 @@ header {
   border-radius: 4px;
   transition: all 0.2s ease;
 
-  &:hover {
-    background-color: rgba($color-primary, 0.1);
-  }
-
   .hamburger-icon {
     color: $color-primary;
     transition: all 0.3s ease;
@@ -135,7 +131,7 @@ header {
     .mobile-menu-title {
       margin: 0;
       color: $color-white;
-      font-size: 18px;
+      font-size: 22px;
       font-weight: 600;
     }
 
@@ -143,7 +139,7 @@ header {
       background: none;
       border: none;
       font-size: 24px;
-      color: #6b7280;
+      color: #fff;
       cursor: pointer;
       padding: 0;
       width: 30px;
@@ -151,7 +147,6 @@ header {
       display: flex;
       align-items: center;
       justify-content: center;
-      border-radius: 50%;
       transition: all 0.2s ease;
 
       // &:hover {

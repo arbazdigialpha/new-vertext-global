@@ -1,5 +1,4 @@
 "use client"
-import { CheckIcon, ClockIcon, CurrencyInrIcon, ShieldCheckIcon } from "@phosphor-icons/react";
 import { CircleGauge , Check , ShieldCheck , IndianRupee  } from "lucide-react";
 
 const items = [

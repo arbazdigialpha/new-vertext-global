@@ -5,9 +5,9 @@ const WhoWeAreSection = () => {
   return (
     <section className="who-we-are section-padding">
       <div className="container section-container">
-        <h2 className="section-heading">Who We Are</h2>
+        <h2 className="section-heading" data-aos="zoom-in">Who We Are</h2>
         <div className="content">
-          <div className="about-us-text">
+          <div className="about-us-text" data-aos="fade-right" data-aos-delay="700" data-aos-offset="200">
             <p className="text-content">
               Founded with a vision to redefine business process outsourcing,
               Vertex Globals brings together a team of seasoned professionals
@@ -26,7 +26,7 @@ const WhoWeAreSection = () => {
               diverse industries.
             </p>
           </div>
-          <div className="team-image">
+          <div className="team-image" data-aos="fade-left" data-aos-delay="1000" data-aos-offset="200">
             <Image
               src="https://ik.imagekit.io/qamrdwkcj/assets/cdn/images/team-image.webp"
               alt="team image"

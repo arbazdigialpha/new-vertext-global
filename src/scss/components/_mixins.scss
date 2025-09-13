@@ -1,0 +1,8 @@
+@mixin card {
+  background: $color-white;
+  border-radius: $radius-md;
+  box-shadow: $shadow-sm;
+  max-width: 280px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}

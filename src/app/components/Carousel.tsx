@@ -1,5 +1,5 @@
 "use client";
-import { CaretLeftIcon, CaretRightIcon } from "@phosphor-icons/react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useState, useEffect } from "react";
 
 interface CarouselProps {
@@ -29,7 +29,7 @@ const Carousel = (props: CarouselProps) => {
     useEffect(() => {
         const updateSlidesToShow = () => {
             const width = window.innerWidth;
-            if (width <= 360) {
+            if (width <= 480) {
                 setResponsiveSlidesToShow(1);
             } else if (width <= 576) {
                 setResponsiveSlidesToShow(2);
@@ -93,11 +93,13 @@ const Carousel = (props: CarouselProps) => {
 
             {showArrows && totalSlides > 1 && (
                 <>
+                {/* <ChevronLeft /> */}
                     <button className="carousel-arrow carousel-prev" onClick={goToPrevious}>
-                    <CaretLeftIcon size={20} weight="bold" color="#0a2a4a" />
+                    {/* <CaretLeftIcon size={20} weight="bold" color="#0a2a4a" /> */}
+                    <ChevronLeft color="#1874d2" strokeWidth={2} />
                     </button>
                     <button className="carousel-arrow carousel-next" onClick={goToNext}>
-                    <CaretRightIcon size={20} weight="bold" color="#0a2a4a" />
+                    <ChevronRight color="#1874d2" strokeWidth={2} />
                     </button>
                 </>
             )}

@@ -58,8 +58,8 @@
         }
       }     
       .icons.x-twitter:hover {
-        background: #fff;
-        color: #000;
+        // background: #fff;
+        // color: #000;
       }
       
       .icons.facebook:hover {
@@ -146,10 +146,15 @@
     }
   }
 }
-@media (min-width: 480px) and (max-width: 768px){
-  .footer-inner {
+@media (max-width: 640px){
+  footer{
+      .footer-brand , .footer-links, .footer-legal{
+        width: 50%;
+        left: 0;
+        flex: unset !important;
+    }
     .footer-links{
-       left: 50px;
+      left: 0 !important;
     }
   }
 }

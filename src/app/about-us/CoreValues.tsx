@@ -32,13 +32,19 @@ const CoreValues = () => {
   return (
     <section className="core-values section-padding">
       <div className="container section-container">
-        <h2 className="section-heading">Our Core Values</h2>
-        <p className="subtitle">
+        <h2 className="section-heading" data-aos="zoom-in">Our Core Values</h2>
+        <p className="subtitle" data-aos="zoom-in" data-aos-delay="400">
           The principles that guide our every action and decision at Vertex Globals.
         </p>
         <div className="values-grid">
           {coreValues.map(({ icon, title, description }, index) => (
-            <div key={index} className="value-card small-card">
+            <div 
+              key={index} 
+              className="value-card small-card" 
+              data-aos="fade-up"
+              data-aos-delay={index * 150}
+              data-aos-duration="600"
+            >
               <span>{icon}</span>
               <h3 className="value-card-title card-title">{title}</h3>
               <p className="card-content">{description}</p>

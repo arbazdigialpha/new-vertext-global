@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import React, { useState, useEffect } from 'react';
 import { usePathname } from 'next/navigation';
-import { List, X } from '@phosphor-icons/react';
+import { TextAlignJustify, X } from 'lucide-react';
 
 const navLinks = [
   { href: '/', label: 'Home' },
@@ -91,11 +91,16 @@ const Header: React.FC = () => {
           aria-label="Toggle mobile menu"
           aria-expanded={isMobileMenuOpen}
         >
-          <List
+          <TextAlignJustify
+            size={32}
+            className={`hamburger-icon ${isMobileMenuOpen ? 'active' : ''}`}
+            color='#1f2937'
+          />
+          {/* <List
             size={32}
             weight="bold"
             className={`hamburger-icon ${isMobileMenuOpen ? 'active' : ''}`}
-          />
+          /> */}
         </button>
       </div>
 
@@ -109,7 +114,7 @@ const Header: React.FC = () => {
             aria-label="Close mobile menu"
           >
             <span className="close-icon">
-              <X size={20} weight="bold" color='#ffffff' />
+              <X strokeWidth={2} color='#fff' />
             </span>
           </button>
         </div>
