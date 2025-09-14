@@ -3,17 +3,17 @@ import Image from "next/image";
 
 const teamMembers = [
   {
-    name: "Sohel Shaikh",
-    role: "CEO & Founder",
-    intro : "Sohel Shaikh is the visionary founder and CEO of Vertex Globals, bringing over a decade of expertise in outsourcing and business process management. His leadership is defined by a commitment to innovation, client success, and operational excellence.",
-    img: "https://ik.imagekit.io/qamrdwkcj/assets/cdn/images/team-image.webp",
+    name: "Sohel Waheed Shaikh",
+    role: "Co-Founder & Managing Partner",
+    intro: "Sohel Waheed Sheikh, with 7+ years in BPO and Human Resource Management, also runs a consultancy. His background in MCA and Business Management allows him to lead with strategy, people management, and operational excellence.",
+    img: "https://ik.imagekit.io/qamrdwkcj/assets/cdn/images/izad-mirza.webp",
     animation: { type: "fade-right", delay: 700 },
   },
   {
-    name: "John Doe",
-    role: "CEO & Founder",
-    intro :"Sohel Shaikh is the visionary founder and CEO of Vertex Globals, bringing over a decade of expertise in outsourcing and business process management. His leadership is defined by a commitment to innovation, client success, and operational excellence.",
-    img: "https://ik.imagekit.io/qamrdwkcj/assets/cdn/images/main-banner.webp",
+    name: "Izad Mirza",
+    role: "Co-Founder & Managing Partner",
+    intro :"Izad Mirza brings over 5 years of experience in the BPO sector and 3 years in e-commerce, along with certifications in Digital Marketing, Business Management, and technical skills in programming. His strong foundation in computer applications ensures a tech-driven approach to client solutions.",
+    img: "https://ik.imagekit.io/qamrdwkcj/assets/cdn/images/izad-mirza.webp",
     animation: { type: "fade-left", delay: 1000 },
   },
 //   {

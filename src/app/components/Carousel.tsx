@@ -94,11 +94,11 @@ const Carousel = (props: CarouselProps) => {
             {showArrows && totalSlides > 1 && (
                 <>
                 {/* <ChevronLeft /> */}
-                    <button className="carousel-arrow carousel-prev" onClick={goToPrevious}>
+                    <button type="button" className="carousel-arrow carousel-prev" onClick={goToPrevious}>
                     {/* <CaretLeftIcon size={20} weight="bold" color="#0a2a4a" /> */}
                     <ChevronLeft color="#1874d2" strokeWidth={2} />
                     </button>
-                    <button className="carousel-arrow carousel-next" onClick={goToNext}>
+                    <button type="button" className="carousel-arrow carousel-next" onClick={goToNext}>
                     <ChevronRight color="#1874d2" strokeWidth={2} />
                     </button>
                 </>

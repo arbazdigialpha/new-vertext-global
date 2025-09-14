@@ -86,6 +86,7 @@ const Header: React.FC = () => {
 
         {/* Mobile Menu Button */}
         <button
+          type="button"
           className="hamburger-btn"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           aria-label="Toggle mobile menu"
@@ -109,6 +110,7 @@ const Header: React.FC = () => {
         <div className="mobile-menu-header">
           <h3 className='mobile-menu-title'>Menu</h3>
           <button
+            type="button"
             className="close-btn"
             onClick={() => setIsMobileMenuOpen(false)}
             aria-label="Close mobile menu"

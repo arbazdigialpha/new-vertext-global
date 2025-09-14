@@ -117,8 +117,9 @@
         padding-block: 25px;
         .member-image{
           width: calc(100% - 50px);
+          // width: 240px;
+          height: 270px;
           margin: 0 auto;
-          height: 240px;
           margin-bottom: 16px;
         }
         .team-img{

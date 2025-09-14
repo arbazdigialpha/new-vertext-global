@@ -9,22 +9,16 @@ const WhoWeAreSection = () => {
         <div className="content">
           <div className="about-us-text" data-aos="fade-right" data-aos-delay="700" data-aos-offset="200">
             <p className="text-content">
-              Founded with a vision to redefine business process outsourcing,
-              Vertex Globals brings together a team of seasoned professionals
-              and cutting-edge technology. We specialize in delivering bespoke
-              solutions that address the unique challenges of modern
-              enterprises, from startups to large corporations. Our commitment
-              to excellence, innovation, and client satisfaction drives every
-              partnership.
+              At Vertex Global Solutions, we are redefining business process outsourcing by combining technology, innovation, and human expertise. Founded by professionals with deep industry experience, our mission is to deliver seamless customer experiences and scalable business solutions that empower our clients to grow globally.
             </p>
-            <p className="text-content">
+            {/* <p className="text-content">
               We believe that effective outsourcing is more than just cost
               savings—it's about strategic partnerships that foster efficiency,
               agility, and competitive advantage. Our comprehensive suite of
               services is designed to streamline operations, enhance customer
               experiences, and unlock new opportunities for our clients across
               diverse industries.
-            </p>
+            </p> */}
           </div>
           <div className="team-image" data-aos="fade-left" data-aos-delay="1000" data-aos-offset="200">
             <Image

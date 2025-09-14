@@ -16,7 +16,7 @@ const CTA = () => {
         our innovative solutions.
       </p>
       <div data-aos="fade-up" data-aos-delay="400">
-        <button className="btn contact-us-btn" onClick={handleContactClick}>
+        <button type="button" className="btn contact-us-btn" onClick={handleContactClick}>
           Contact Us
         </button>
       </div>
