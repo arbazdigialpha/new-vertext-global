@@ -7,8 +7,8 @@ import AOSProvider from "./components/AOSProvider";
 
 export const metadata: Metadata = {
   // Basic Meta Tags
-  title: "Vertex Globals - Your Trusted Partner in Global Business Solutions",
-  description: "Vertex Globals provides comprehensive business solutions across multiple industries including banking, finance, healthcare, retail, and more. We deliver innovative, scalable solutions that drive business growth and digital transformation.",
+  title: "Vertex Global - Your Trusted Partner in Global Business Solutions",
+  description: "Vertex Global provides comprehensive business solutions across multiple industries including banking, finance, healthcare, retail, and more. We deliver innovative, scalable solutions that drive business growth and digital transformation.",
 
   // Meta Tags Start
   // ========================================
@@ -19,16 +19,16 @@ export const metadata: Metadata = {
 
   // Open Graph Meta Tags (Social Media)
   openGraph: {
-    title: "Vertex Globals - Global Business Solutions & Consulting",
-    description: "Transform your business with Vertex Globals. Expert consulting in banking, healthcare, retail, and finance. Drive innovation and growth with our comprehensive solutions.",
+    title: "Vertex Global - Global Business Solutions & Consulting",
+    description: "Transform your business with Vertex Global. Expert consulting in banking, healthcare, retail, and finance. Drive innovation and growth with our comprehensive solutions.",
     url: "https://vertexglobals.com",
-    siteName: "Vertex Globals",
+    siteName: "Vertex Global",
     images: [
       {
         url: "/images/logo/logo.svg",
         width: 1200,
         height: 630,
-        alt: "Vertex Globals - Global Business Solutions",
+        alt: "Vertex Global - Global Business Solutions",
       },
     ],
     locale: "en_US",
@@ -38,17 +38,17 @@ export const metadata: Metadata = {
   // Twitter Card Meta Tags
   twitter: {
     card: "summary_large_image",
-    title: "Vertex Globals - Global Business Solutions & Consulting",
-    description: "Transform your business with Vertex Globals. Expert consulting in banking, healthcare, retail, and finance.",
+    title: "Vertex Global - Global Business Solutions & Consulting",
+    description: "Transform your business with Vertex Global. Expert consulting in banking, healthcare, retail, and finance.",
     images: ["/images/logo/logo.svg"],
     creator: "@vertexglobals",
     site: "@vertexglobals",
   },
 
   // Additional SEO Meta Tags
-  authors: [{ name: "Vertex Globals Team" }],
-  creator: "Vertex Globals",
-  publisher: "Vertex Globals",
+  authors: [{ name: "Vertex Global Team" }],
+  creator: "Vertex Global",
+  publisher: "Vertex Global",
   category: "Business & Consulting",
   classification: "Business Services",
 
@@ -101,9 +101,9 @@ export default function RootLayout({
     <html lang="en" className={nunito.variable}>
       <body>
         <AOSProvider>
-        <Header />
-        <main className="vertex-globale">{children}</main>
-        <Footer />
+          <Header />
+          <main className="vertex-globale">{children}</main>
+          <Footer />
         </AOSProvider>
       </body>
     </html>

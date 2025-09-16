@@ -39,6 +39,7 @@
 
       img {
         border-radius: 6px;
+        width: 100%;
         box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1F;
       }
     }
@@ -184,6 +185,7 @@
 
         .about-us-text {
           min-width: 100%;
+          order: 2;
         }
 
         .team-image {
@@ -191,6 +193,7 @@
           flex: 1;
           display: flex;
           justify-content: center;
+          order: 1;
         }
       }
     }
@@ -216,5 +219,16 @@
     }
   }
 }
-
 // Media query end
+.toggle-btn {
+  margin-top: 4px;
+  background: none;
+  border: none;
+  color: $color-secondary;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 16px;
+}
+.toggle-btn:hover {
+  text-decoration: underline;
+}

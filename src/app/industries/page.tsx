@@ -51,8 +51,8 @@ export default function Industries() {
   return (
     <>
       <Seo
-        title="Industries We Serve – Vertex Globals"
-        description="Vertex Globals provides outsourcing solutions for e-commerce, banking, finance, healthcare, travel, hospitality, and retail industries."
+        title="Industries We Serve – Vertex Global"
+        description="Vertex Global provides outsourcing solutions for e-commerce, banking, finance, healthcare, travel, hospitality, and retail industries."
         url={pageUrl}
         breadcrumbItems={[
           { name: 'Home', url: 'https://www.vertex-globals.com/' },

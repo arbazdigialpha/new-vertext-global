@@ -1,4 +1,77 @@
 @use './variables' as *;
+@import "./components/mixins";
+
+.contact-hero{
+  @include banner;
+  background:
+    linear-gradient(rgba(1, 1, 1, 0.7) 0%, rgba(1, 1, 1, 0.7) 100%),
+    url("https://ik.imagekit.io/qamrdwkcj/assets/cdn/images/contact-us.webp") no-repeat center center;
+}
+// arrow animation start 
+.arrow-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  cursor: pointer;
+}
+
+.chevron {
+  position: absolute;
+  width: 35px; 
+  height: 8px; 
+  opacity: 0;
+  transform: scale(0.3);
+  animation: move-chevron 3s ease-out infinite;
+
+  &:first-child {
+    animation: move-chevron 3s ease-out 1s infinite;
+  }
+
+  &:nth-child(2) {
+    animation: move-chevron 3s ease-out 2s infinite;
+  }
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: -10px;
+    height: 100%;
+    width: 50%;
+    background: #fff;
+  }
+
+  &::before {
+    left: 0;
+    transform: skewY(30deg);
+  }
+
+  &::after {
+    right: 0;
+    transform: skewY(-30deg);
+  }
+}
+
+@keyframes move-chevron {
+  25% {
+    opacity: 1;
+  }
+  33.3% {
+    opacity: 1;
+    transform: translateY(38px);
+  }
+  66.6% {
+    opacity: 1;
+    transform: translateY(52px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(80px) scale(0.5);
+  }
+}
+// arrow animation end 
 .contact-section{
   width:100%;
   display:flex;
@@ -164,6 +237,9 @@ textarea.error{
   font-weight:600;
   color:$color-primary;
   text-align:center;
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 /* Responsive */
 @media(max-width:768px){

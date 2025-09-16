@@ -10,7 +10,7 @@ interface ServiceCardProps {
 }
 
 const ServiceCard = ({ title, description, imageUrl, index }: ServiceCardProps) => {
-  const [aosType, setAosType] = useState("zoom-in");
+  const [aosType, setAosType] = useState("fade-left");
 
   useEffect(() => {
     if (window.innerWidth < 680) {

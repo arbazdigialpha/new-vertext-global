@@ -8,15 +8,13 @@ const teamMembers = [
     intro: "Sohel Waheed Sheikh, with 7+ years in BPO and Human Resource Management, also runs a consultancy. His background in MCA and Business Management allows him to lead with strategy, people management, and operational excellence.",
     img: "https://ik.imagekit.io/qamrdwkcj/assets/cdn/images/sohel-shaikh.webp",
     animation: { type: "fade-right", delay: 1000 },
-    // animation: { type: "fade-right", delay: 700 },
   },
   {
     name: "Izad Mirza",
     role: "Co-Founder & Managing Partner",
-    intro :"Izad Mirza brings over 5 years of experience in the BPO sector and 3 years in e-commerce, along with certifications in Digital Marketing, Business Management, and technical skills in programming. His strong foundation in computer applications ensures a tech-driven approach to client solutions.",
+    intro: "Izad Mirza brings over 5 years of experience in the BPO sector and 3 years in e-commerce, along with certifications in Digital Marketing, Business Management, and technical skills in programming. His strong foundation in computer applications ensures a tech-driven approach to client solutions.",
     img: "https://ik.imagekit.io/qamrdwkcj/assets/cdn/images/izad-mirza.webp",
     animation: { type: "fade-left", delay: 1300 },
-    // animation: { type: "fade-left", delay: 1000 },
   },
 ];
 
@@ -26,17 +24,17 @@ const LeaderShip = () => {
       <div className="container section-container">
         <h2 className="section-title section-heading" data-aos="zoom-in">Our Leadership Team</h2>
         <p className="subtitle" data-aos="zoom-in" data-aos-delay="200">
-          Meet the dedicated individuals guiding Vertex Globals towards a future
+          Meet the dedicated individuals guiding Vertex Global towards a future
           of innovation and success.
         </p>
         <div className="team-grid team-card-wrapper">
-          {teamMembers.map(({ name, role, img , intro , animation }, index) => (
-            <div 
-                key={index} 
-                className="team-card"
-                data-aos={animation.type}
-                data-aos-delay={animation.delay}
-                data-aos-offset="200"
+          {teamMembers.map(({ name, role, img, intro, animation }, index) => (
+            <div
+              key={index}
+              className="team-card"
+              data-aos={animation.type}
+              data-aos-delay={animation.delay}
+              data-aos-offset="200"
             >
               <div className="member-image">
                 <Image

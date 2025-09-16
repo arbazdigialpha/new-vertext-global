@@ -11,7 +11,7 @@ interface SeoProps {
 const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  "name": "Vertex Globals",
+  "name": "Vertex Global",
   "url": "https://www.vertex-globals.com",
   "logo": "https://www.vertex-globals.com/images/logo-placeholder.webp",
   "sameAs": [
@@ -23,7 +23,7 @@ const organizationSchema = {
 const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  "name": "Vertex Globals",
+  "name": "Vertex Global",
   "image": "https://www.vertex-globals.com/images/logo-placeholder.webp",
   "telephone": "+1-555-555-5555",
   "email": "connect@vertex-globals.com",
@@ -42,10 +42,10 @@ const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   "url": "https://www.vertex-globals.com",
-  "name": "Vertex Globals",
+  "name": "Vertex Global",
   "publisher": {
     "@type": "Organization",
-    "name": "Vertex Globals",
+    "name": "Vertex Global",
     "logo": {
       "@type": "ImageObject",
       "url": "https://www.vertex-globals.com/images/logo-placeholder.webp"

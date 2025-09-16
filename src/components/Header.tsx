@@ -11,8 +11,10 @@ const navLinks = [
   { href: '/about-us', label: 'About Us' },
   { href: '/contact', label: 'Contact' },
   { href: '/services', label: 'Services' },
-  { href: '/industries', label: 'Industries' },
-  { href: '/careers', label: 'Careers' }
+  { href: '#', label: 'Industries' },
+  { href: '#', label: 'Careers' }
+  // { href: '/industries', label: 'Industries' },
+  // { href: '/careers', label: 'Careers' }
 ];
 
 const Header: React.FC = () => {
@@ -54,10 +56,10 @@ const Header: React.FC = () => {
     <header>
       <div className="nav-container navbar section-container" role="banner">
         <div className="logo">
-          <Link href="/" aria-label="Vertex Globals Home">
+          <Link href="/" aria-label="Vertex Global Home">
             <Image
               src="/images/logo/logo.svg"
-              alt="Vertex Globals Logo"
+              alt="Vertex Global Logo"
               width={150}
               height={40}
               priority

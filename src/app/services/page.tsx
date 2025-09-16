@@ -1,9 +1,11 @@
 import React from 'react';
 import Seo from '../../components/Seo';
 import ServiceCard from '../components/ServiceCard';
+import ServiceBanner from './ServiceBanner';
+import CTA from '../components/CTA';
 export default function Services() {
   const pageUrl = '/services';
-    const services = [
+  const services = [
     {
       title: "Non-Voice Process Outsourcing",
       description:
@@ -36,22 +38,24 @@ export default function Services() {
   return (
     <>
       <Seo
-        title="BPO & Outsourcing Services – Vertex Globals"
-        description="Explore Vertex Globals’ outsourcing services including customer support, data entry, back office, and document processing."
+        title="BPO & Outsourcing Services – Vertex Global"
+        description="Explore Vertex Global’ outsourcing services including customer support, data entry, back office, and document processing."
         url={pageUrl}
         breadcrumbItems={[
           { name: 'Home', url: 'https://www.vertex-globals.com/' },
           { name: 'Services', url: 'https://www.vertex-globals.com/services' },
         ]}
       />
-
+      {/* Our services banner start  */}
+      <ServiceBanner />
+      {/* Our services banner end  */}
       <section className="section-padding services-section" aria-labelledby="services-heading">
         <div className='section-container'>
-          <h1 id="services-heading" aria-labelledby="services-heading"className="section-heading" data-aos="zoom-in">
+          <h1 id="services-heading" aria-labelledby="services-heading" className="section-heading" data-aos="zoom-in">
             Our Services
           </h1>
           <div className='services__list card-arrangment'>
-          {services.map((service , i) => (
+            {services.map((service, i) => (
               <ServiceCard
                 key={service.title.replace(/\s+/g, '-').toLowerCase()}
                 index={i}
@@ -63,6 +67,7 @@ export default function Services() {
           </div>
         </div>
       </section>
+      <CTA />
     </>
   );
 }

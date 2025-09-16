@@ -21,8 +21,8 @@ export default function Careers() {
   return (
     <>
       <Seo
-        title="Careers at Vertex Globals – Join Our Team"
-        description="Explore career opportunities at Vertex Globals and join a growing BPO where talent meets opportunity."
+        title="Careers at Vertex Global – Join Our Team"
+        description="Explore career opportunities at Vertex Global and join a growing BPO where talent meets opportunity."
         url={pageUrl}
         breadcrumbItems={[
           { name: 'Home', url: 'https://www.vertex-globals.com/' },
@@ -31,7 +31,7 @@ export default function Careers() {
       />
 
       <section className="container" aria-labelledby="careers-heading">
-        <h1 id="careers-heading">Careers at Vertex Globals</h1>
+        <h1 id="careers-heading">Careers at Vertex Global</h1>
         <p>Join a growing BPO where talent meets opportunity.</p>
 
         <div aria-label="Job listings placeholder" style={{ marginBottom: '2rem' }}>

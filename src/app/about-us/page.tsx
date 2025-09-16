@@ -13,8 +13,8 @@ const AboutUsPage = () => {
   return (
     <>
       <Seo
-        title="About Vertex Globals – Our Mission, Vision & Values"
-        description="Learn about Vertex Globals, our mission to deliver efficient outsourcing solutions, vision for global partnerships, and core values of integrity, accuracy, and client focus."
+        title="About Vertex Global – Our Mission, Vision & Values"
+        description="Learn about Vertex Global, our mission to deliver efficient outsourcing solutions, vision for global partnerships, and core values of integrity, accuracy, and client focus."
         url={pageUrl}
         breadcrumbItems={[
           { name: 'Home', url: 'https://www.vertex-globals.com/' },

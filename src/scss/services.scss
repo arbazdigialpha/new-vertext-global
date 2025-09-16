@@ -1,39 +1,9 @@
-// @use './variables' as *;
-// @import "./components/mixins";
+@use './variables' as *;
+@import "./components/mixins";
 
-
-// .services-section {
-
-//   .card {
-//     @include card;
-//     padding: 32px 16px;
-//     cursor: pointer;
-//     text-align: left;
-
-//     &:hover {
-//       transform: scale(1.05);
-//     }
-
-//     .service-card-image {
-//       border-radius: 4px;
-//       margin-bottom: 16px;
-//     }
-
-//     .service-card-title {
-//       margin-bottom: 8px;
-//       font-size: 17px;
-//       font-weight: 500;
-//       color: $color-text-dark;
-//     }
-
-//     .service-card-description {
-//       font-size: 14px;
-//       color: $color-text-light;
-//       display: -webkit-box;
-//       -webkit-line-clamp: 2;
-//       -webkit-box-orient: vertical;
-//       overflow: hidden;
-//       text-overflow: ellipsis;
-//     }
-//   }
-// }
+.service-hero{
+  @include banner;
+  background:
+    linear-gradient(rgba(1, 1, 1, 0.7) 0%, rgba(1, 1, 1, 0.7) 100%),
+    url("https://ik.imagekit.io/qamrdwkcj/assets/cdn/images/our-services.webp") no-repeat center center;
+}
