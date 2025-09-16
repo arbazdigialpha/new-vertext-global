@@ -6,7 +6,9 @@
 @use './homepage.scss';
 @use './about-us.scss';
 @use './contact.scss';
+@use './services.scss';
 @import '../../public/libs/blaze-slider/blaze.css';
+@import "./components/mixins";
 
 * {
   margin: 0;
@@ -70,6 +72,42 @@ img {
     margin: 0;
   }
 }
+.services-section {
+
+  .card {
+    @include card;
+    padding: 32px 16px;
+    cursor: pointer;
+    text-align: left;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    .service-card-image {
+      border-radius: 4px;
+      margin-bottom: 16px;
+    }
+
+    .service-card-title {
+      margin-bottom: 8px;
+      font-size: 17px;
+      font-weight: 500;
+      color: $color-text-dark;
+    }
+
+    .service-card-description {
+      font-size: 14px;
+      color: $color-text-light;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}
+
 // Responsive breakpoints for better mobile experience
 @media (min-width: 768px) {
   .section-container {

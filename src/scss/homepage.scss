@@ -1,15 +1,6 @@
 @use './variables' as *;
 @import "./components/mixins";
 
-// @mixin card {
-//   background: $color-white;
-//   border-radius: $radius-md;
-//   box-shadow: $shadow-sm;
-//   max-width: 280px;
-//   text-align: center;
-//   transition: all 0.3s ease-in-out;
-// }
-
 // commen style start
 .card-arrangment {
   display: flex;
@@ -28,9 +19,6 @@
   align-items: center;
   justify-content: center;
   padding: 0 20px 40px;
-  // background:
-  //   linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 100%),
-  //   url("https://ik.imagekit.io/qamrdwkcj/assets/cdn/images/hero-image.webp") no-repeat center center;
   background:
     linear-gradient(rgba(1, 1, 1, 0.8) 0%, rgba(1, 1, 1, 0.7) 100%),
     url("https://ik.imagekit.io/qamrdwkcj/assets/cdn/images/main-banner.webp") no-repeat center center;
@@ -67,41 +55,41 @@
 }
 
 // Services Section
-.services-section {
+// .services-section {
 
-  .card {
-    @include card;
-    padding: 32px 16px;
-    cursor: pointer;
-    text-align: left;
+//   .card {
+//     @include card;
+//     padding: 32px 16px;
+//     cursor: pointer;
+//     text-align: left;
 
-    &:hover {
-      transform: scale(1.05);
-    }
+//     &:hover {
+//       transform: scale(1.05);
+//     }
 
-    .service-card-image {
-      border-radius: 4px;
-      margin-bottom: 16px;
-    }
+//     .service-card-image {
+//       border-radius: 4px;
+//       margin-bottom: 16px;
+//     }
 
-    .service-card-title {
-      margin-bottom: 8px;
-      font-size: 17px;
-      font-weight: 500;
-      color: $color-text-dark;
-    }
+//     .service-card-title {
+//       margin-bottom: 8px;
+//       font-size: 17px;
+//       font-weight: 500;
+//       color: $color-text-dark;
+//     }
 
-    .service-card-description {
-      font-size: 14px;
-      color: $color-text-light;
-      display: -webkit-box;
-      -webkit-line-clamp: 2;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
-  }
-}
+//     .service-card-description {
+//       font-size: 14px;
+//       color: $color-text-light;
+//       display: -webkit-box;
+//       -webkit-line-clamp: 2;
+//       -webkit-box-orient: vertical;
+//       overflow: hidden;
+//       text-overflow: ellipsis;
+//     }
+//   }
+// }
 
 // Why Choose Us Section
 .home-why {

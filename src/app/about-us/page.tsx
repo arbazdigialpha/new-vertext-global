@@ -6,6 +6,7 @@ import WhoWeAreSection from "./WhoWeAreSection";
 import OurPurpose from "./OurPurpose";
 import CoreValues from "./CoreValues";
 import LeaderShip from "./LeaderShip";
+import CTA from "../components/CTA";
 
 const AboutUsPage = () => {
   const pageUrl = '/about-us';
@@ -27,9 +28,10 @@ const AboutUsPage = () => {
         <OurPurpose />
         {/* Core Values Section */}
         <CoreValues />
-
         {/* Leadership Team Section */}
         <LeaderShip />
+        {/* Call to Action Section */}
+        <CTA />
       </main>
     </>
   );

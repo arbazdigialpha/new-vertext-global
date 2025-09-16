@@ -6,7 +6,7 @@ interface ServiceCardProps {
   title: string;
   description: string;
   imageUrl: string;
-  index: number; // 👈 index add kiya for left/right animation
+  index: number;
 }
 
 const ServiceCard = ({ title, description, imageUrl, index }: ServiceCardProps) => {
@@ -27,7 +27,7 @@ const ServiceCard = ({ title, description, imageUrl, index }: ServiceCardProps) 
     <article
       className="card service-card"
       data-aos={aosType}
-      data-aos-delay={index * 150}
+      data-aos-delay={ 500 + index * 150}
       data-aos-duration="600"
     >
       <Link href={`/services`}>

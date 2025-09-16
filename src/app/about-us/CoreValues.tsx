@@ -33,7 +33,7 @@ const CoreValues = () => {
     <section className="core-values section-padding">
       <div className="container section-container">
         <h2 className="section-heading" data-aos="zoom-in">Our Core Values</h2>
-        <p className="subtitle" data-aos="zoom-in" data-aos-delay="400">
+        <p className="subtitle" data-aos="zoom-in" data-aos-delay="300">
           The principles that guide our every action and decision at Vertex Globals.
         </p>
         <div className="values-grid">

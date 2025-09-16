@@ -25,7 +25,7 @@ const OurPurpose = () => {
         <h2 className="section-heading" data-aos="zoom-in">
           Our Purpose
         </h2>
-        <p className="subtitle" data-aos="zoom-in" data-aos-delay="400">
+        <p className="subtitle" data-aos="zoom-in" data-aos-delay="300">
           Driving excellence through clear objectives and forward-thinking goals.
         </p>
 

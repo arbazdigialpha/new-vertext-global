@@ -27,7 +27,7 @@
       flex: 1;
 
       .text-content {
-        margin-bottom: 32px;
+        margin-bottom: 16px;
         color: $color-text-dark;
         text-align: justify;
         font-weight: 300;
@@ -116,7 +116,7 @@
         max-width: 320px;
         padding-block: 25px;
         .member-image{
-          width: calc(100% - 50px);
+          width: calc(100% - 60px);
           // width: 240px;
           height: 270px;
           margin: 0 auto;
@@ -218,11 +218,3 @@
 }
 
 // Media query end
-// [data-aos="slide-left"] {
-//   transform: translateX(150%);
-//   opacity: 1;
-// }
-
-// [data-aos="slide-left"].aos-animate {
-//   transform: translateX(0);
-// }

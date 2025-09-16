@@ -1,27 +1,38 @@
 import React from 'react';
 import Seo from '../../components/Seo';
-
-const services = [
-  {
-    title: 'Email & Chat Support',
-    description: '24/7 customer engagement through email and chat channels.',
-  },
-  {
-    title: 'Data Entry & Processing',
-    description: 'Accurate, scalable data handling for your business needs.',
-  },
-  {
-    title: 'Back Office Solutions',
-    description: 'Payroll, finance, and administrative support tailored to your operations.',
-  },
-  {
-    title: 'Document Processing',
-    description: 'Digitization, indexing, and secure handling of your documents.',
-  },
-];
-
+import ServiceCard from '../components/ServiceCard';
 export default function Services() {
   const pageUrl = '/services';
+    const services = [
+    {
+      title: "Non-Voice Process Outsourcing",
+      description:
+        "Streamline your non-voice operations with our expert outsourcing solutions.",
+      imageUrl:
+        "https://ik.imagekit.io/qamrdwkcj/assets/cdn/images/non-voice.webp",
+    },
+    {
+      title: "Data Processing & Back Office",
+      description:
+        "Enhance efficiency with our comprehensive data processing and back-office services.",
+      imageUrl:
+        "https://ik.imagekit.io/qamrdwkcj/assets/cdn/images/data-processing-back-office.webp",
+    },
+    {
+      title: "Customer Email & Chat Support",
+      description:
+        "Provide exceptional customer service through our email and chat support solutions.",
+      imageUrl:
+        "https://ik.imagekit.io/qamrdwkcj/assets/cdn/images/customer-email.webp",
+    },
+    {
+      title: "Document Management",
+      description:
+        "Efficiently manage your documents with our advanced document management services.",
+      imageUrl:
+        "https://ik.imagekit.io/qamrdwkcj/assets/cdn/images/document-management.webp",
+    },
+  ];
   return (
     <>
       <Seo
@@ -34,19 +45,22 @@ export default function Services() {
         ]}
       />
 
-      <section className="container" aria-labelledby="services-heading">
-        <h1 id="services-heading">Our Services</h1>
-        <div style={{ display: 'grid', gap: '2rem', gridTemplateColumns: 'repeat(auto-fit,minmax(280px,1fr))' }}>
-          {services.map(({ title, description }) => (
-            <article
-              key={title}
-              aria-labelledby={`service-${title.replace(/\s+/g, '-').toLowerCase()}`}
-              className="service-card"
-            >
-              <h2 id={`service-${title.replace(/\s+/g, '-').toLowerCase()}`}>{title}</h2>
-              <p>{description}</p>
-            </article>
-          ))}
+      <section className="section-padding services-section" aria-labelledby="services-heading">
+        <div className='section-container'>
+          <h1 id="services-heading" aria-labelledby="services-heading"className="section-heading" data-aos="zoom-in">
+            Our Services
+          </h1>
+          <div className='services__list card-arrangment'>
+          {services.map((service , i) => (
+              <ServiceCard
+                key={service.title.replace(/\s+/g, '-').toLowerCase()}
+                index={i}
+                title={service.title}
+                description={service.description}
+                imageUrl={service.imageUrl}
+              />
+            ))}
+          </div>
         </div>
       </section>
     </>
