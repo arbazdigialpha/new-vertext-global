@@ -7,6 +7,7 @@
 @use './about-us.scss';
 @use './contact.scss';
 @use './services.scss';
+@use './industries.scss';
 @import '../../public/libs/blaze-slider/blaze.css';
 @import "./components/mixins";
 
@@ -110,6 +111,19 @@ img {
 }
 
 // Responsive breakpoints for better mobile experience
+@media (max-width: 480px) {
+  // .industries-section {
+  //   .industries-heading {
+      .section-heading {
+        font-size: 44px;
+    //   }
+    // }
+  }
+  .industries-heading 
+  .section-heading{
+    font-size: 44px;
+  }
+}
 @media (min-width: 768px) {
   .section-container {
     padding: 0 40px;
