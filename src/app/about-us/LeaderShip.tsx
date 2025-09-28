@@ -13,7 +13,7 @@ const teamMembers = [
     name: "Izad Mirza",
     role: "Co-Founder & Managing Partner",
     intro: "Izad Mirza brings over 5 years of experience in the BPO sector and 3 years in e-commerce, along with certifications in Digital Marketing, Business Management, and technical skills in programming. His strong foundation in computer applications ensures a tech-driven approach to client solutions.",
-    img: "https://ik.imagekit.io/qamrdwkcj/assets/cdn/images/izad-mirza.webp",
+    img: "https://ik.imagekit.io/qamrdwkcj/assets/cdn/images/izad-mirza-img.webp",
     animation: { type: "fade-left", delay: 1300 },
   },
 ];

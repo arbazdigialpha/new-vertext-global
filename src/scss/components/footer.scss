@@ -1,7 +1,7 @@
 @use '../variables.scss' as *;
 .footer {
   background: $color-white;
-  padding: 40px 0;
+  padding: 40px 0 20px;
   .footer-inner {
     max-width: 1200px;
     margin: 0 auto;
@@ -119,6 +119,12 @@
     margin: 24px auto 0;
     padding: 0 24px;
     border-top: 1px solid #E5E7EBFF;
+  }
+  .copyright-text{
+    font-size: 14px;
+    color: $color-text-light;
+    margin-top: 24px;
+    text-align: center;
   }
 }
 @media (max-width: 768px) {

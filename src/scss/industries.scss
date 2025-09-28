@@ -2,6 +2,7 @@
 @import "./components/mixins";
 
 .industries-section{
+    background: linear-gradient(135deg, #eff6ff 0%, #ffffff 100%);
     .industries-list{
         margin-inline: 40px;
         .industry-card{

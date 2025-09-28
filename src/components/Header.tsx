@@ -12,9 +12,7 @@ const navLinks = [
   { href: '/contact', label: 'Contact' },
   { href: '/services', label: 'Services' },
   { href: '/industries', label: 'Industries' },
-  { href: '#', label: 'Careers' },
-  // { href: '/industries', label: 'Industries' },
-  // { href: '/careers', label: 'Careers' }
+  { href: '/careers', label: 'Careers' },
 ];
 
 const Header: React.FC = () => {

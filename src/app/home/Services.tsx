@@ -7,28 +7,28 @@ const Services = () => {
       description:
         "Streamline your non-voice operations with our expert outsourcing solutions.",
       imageUrl:
-        "https://ik.imagekit.io/qamrdwkcj/assets/cdn/images/non-voice.webp",
+        "https://ik.imagekit.io/qamrdwkcj/assets/cdn/images/non-voice-img.webp",
     },
     {
       title: "Data Processing & Back Office",
       description:
         "Enhance efficiency with our comprehensive data processing and back-office services.",
       imageUrl:
-        "https://ik.imagekit.io/qamrdwkcj/assets/cdn/images/data-processing-back-office.webp",
+        "https://ik.imagekit.io/qamrdwkcj/assets/cdn/images/data-process-img.webp",
     },
     {
       title: "Customer Email & Chat Support",
       description:
         "Provide exceptional customer service through our email and chat support solutions.",
       imageUrl:
-        "https://ik.imagekit.io/qamrdwkcj/assets/cdn/images/customer-email.webp",
+        "https://ik.imagekit.io/qamrdwkcj/assets/cdn/images/email-chat-img.webp",
     },
     {
       title: "Document Management",
       description:
         "Efficiently manage your documents with our advanced document management services.",
       imageUrl:
-        "https://ik.imagekit.io/qamrdwkcj/assets/cdn/images/document-management.webp",
+        "https://ik.imagekit.io/qamrdwkcj/assets/cdn/images/doc-management.webp",
     },
   ];
 

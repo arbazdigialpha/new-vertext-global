@@ -1,0 +1,24 @@
+@use '../variables.scss' as *;
+.scrollToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: $color-primary;
+    color: $color-white;
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    transition: opacity 0.3s ease;
+    z-index: 1000;
+    @media (min-width: 992px) {
+      &:hover {
+        background: $color-primary-dark;
+      }
+  }
+}

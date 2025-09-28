@@ -1,5 +1,6 @@
 'use client'
 import React, { useState } from 'react'
+import MessageSendingAnimation from './MessageSendingAnimation'
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -12,6 +13,7 @@ const ContactForm = () => {
 
   const [errors, setErrors] = useState<{ [key: string]: string }>({})
   const [submitted, setSubmitted] = useState(false)
+  const [isSubmitting, setIsSubmitting] = useState(false)
 
   const maxMessageLength = 500
 
@@ -63,14 +65,53 @@ const ContactForm = () => {
     return newErrors
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     const validationErrors = validate()
     if (Object.keys(validationErrors).length > 0) {
       setErrors(validationErrors)
       return
     }
-    setSubmitted(true)
+
+    setIsSubmitting(true)
+    
+    try {
+      // Send POST request to API route
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          message: formData.message,
+        }),
+      })
+
+      const result = await response.json()
+
+      if (result.success) {
+        setSubmitted(true)
+        // Reset form data
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          company: '',
+          message: '',
+        })
+      } else {
+        // Handle API error
+        setErrors({ submit: result.message || 'Failed to send message. Please try again.' })
+      }
+    } catch (error) {
+      // Handle network or other errors
+      setErrors({ submit: 'Network error. Please check your connection and try again.' })
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return (
@@ -161,10 +202,33 @@ const ContactForm = () => {
                 {errors.message && <span className="error-text">{errors.message}</span>}
               </div>
 
-              <button type="submit" className="btn-submit">Send Message</button>
+              <button 
+                type="submit" 
+                className="btn-submit" 
+                disabled={isSubmitting}
+              >
+                {/* {isSubmitting ? 'Sending...' : <MessageSendingAnimation />} */}
+                {isSubmitting ? <MessageSendingAnimation /> : 'Send Message'}
+              </button>
+              
+              {errors.submit && (
+                <div className="error-text" style={{ marginTop: '10px', textAlign: 'center' }}>
+                  {errors.submit}
+                </div>
+              )}
             </form>
           ) : (
-            <p className="thank-you">✅ Thank you for contacting us! We will get back to you shortly.</p>
+            <div className="thank-you">
+              <p>✅ Thank you for contacting us! We will get back to you shortly.</p>
+              <button 
+                type="button" 
+                onClick={() => setSubmitted(false)}
+                className="btn-submit"
+                style={{ marginTop: '20px' }}
+              >
+                Send Another Message
+              </button>
+            </div>
           )}
         </div>
       </div>

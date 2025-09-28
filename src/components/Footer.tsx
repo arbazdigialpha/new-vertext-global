@@ -63,8 +63,8 @@ const Footer = () => {
               {/* <Link href="#">Industries</Link> */}
             </li>
             <li>
-              {/* <Link href="/careers">Careers</Link> */}
-              <Link href="#">Careers</Link>
+              <Link href="/careers">Careers</Link>
+              {/* <Link href="#">Careers</Link> */}
             </li>
           </ul>
         </nav>
@@ -87,6 +87,7 @@ const Footer = () => {
 
       {/* Bottom Border */}
       <div className="footer-bottom"></div>
+      <p className="copyright-text"> © 2025 Vertex Global Solutions. All rights reserved. </p>
     </footer>
   );
 };

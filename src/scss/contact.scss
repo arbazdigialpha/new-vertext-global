@@ -77,7 +77,8 @@
   display:flex;
   justify-content:center;
   padding:60px 20px;
-  background:#f5f7fa;
+  // background:#f5f7fa;
+  background: linear-gradient(135deg, #eff6ff 0%, #ffffff 100%);
 }
 .contact-box{
   display:flex;
@@ -238,9 +239,43 @@ textarea.error{
   color:$color-primary;
   text-align:center;
   display: flex;
+  flex-direction:column;
+  justify-content:center;
   align-items: center;
   height: 100%;
 }
+.thank-you p{
+  margin-bottom: 10px;
+}
+.thank-you button{
+  margin-top: 10px;
+}
+.submitting-loader {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: block;
+  margin:5.5px auto;
+  position: relative;
+  color: $color-white;
+  box-sizing: border-box;
+  animation: submitting-loader 1s linear infinite alternate;
+}
+@keyframes submitting-loader {
+  0% {
+    box-shadow: -38px -12px ,  -14px 0,  14px 0, 38px 0;
+  }
+  33% {
+    box-shadow: -38px 0px, -14px -12px,  14px 0, 38px 0;
+  }
+  66% {
+    box-shadow: -38px 0px , -14px 0, 14px -12px, 38px 0;
+  }
+  100% {
+    box-shadow: -38px 0 , -14px 0, 14px 0 , 38px -12px;
+  }
+}
+
 /* Responsive */
 @media(max-width:768px){
   .contact-box{flex-direction:column;}

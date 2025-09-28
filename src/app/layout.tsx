@@ -4,6 +4,8 @@ import "../scss/globals.scss";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import AOSProvider from "./components/AOSProvider";
+import Loader from "@/components/Loader";
+import ScrollToTop from "@/components/ScrollToTop";
 
 export const metadata: Metadata = {
   // Basic Meta Tags
@@ -102,8 +104,10 @@ export default function RootLayout({
       <body>
         <AOSProvider>
           <Header />
+          <Loader />
           <main className="vertex-globale">{children}</main>
           <Footer />
+          <ScrollToTop />
         </AOSProvider>
       </body>
     </html>
