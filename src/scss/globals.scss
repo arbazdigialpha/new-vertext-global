@@ -9,11 +9,11 @@
 @use './services.scss';
 @use './industries.scss';
 @use './careers.scss';
+@use './FAQSection.scss';
 @import '../../public/libs/blaze-slider/blaze.css';
 @import "./components/mixins";
 @import "./components/loader.scss";
 @import "./components/scrollToTop.scss";
-
 * {
   margin: 0;
   padding: 0;

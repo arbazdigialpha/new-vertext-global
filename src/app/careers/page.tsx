@@ -6,6 +6,9 @@ import HeroSection from './HeroSection';
 import WelcomeToVertext from './WelcomeToVertext';
 import OurCulture from './OurCulture';
 import WhyCareerWithUs from './WhyCareerWithUs';
+import CareerPath from './CareerPath';
+import { careersFaqs } from '@/data/faqs/careersFaqs';
+import FAQSection from '@/components/FAQSection';
 
 export default function Careers() {
   const pageUrl = '/careers'
@@ -29,6 +32,10 @@ export default function Careers() {
       <OurCulture />
       {/* Why Career with Us Section */}
       <WhyCareerWithUs />
+      {/* Career Path Section */}
+      <CareerPath />
+      {/* FAQ Section */}
+      <FAQSection title="Careers FAQs" faqs={careersFaqs} />
     </main>
   );
 }

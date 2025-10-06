@@ -75,11 +75,15 @@ const Footer = () => {
           <ul className="footer-legal-list text-left">
             <li>
               {/* <Link href="/privacy-policy">Privacy Policy</Link> */}
-              <Link href="#">Privacy Policy</Link>
+              <Link href="/privacy-policy">Privacy Policy</Link>
             </li>
             <li>
               {/* <Link href="/terms-of-service">Terms of Service</Link> */}
-              <Link href="#">Terms of Service</Link>
+              <Link href="/terms-of-service">Terms of Service</Link>
+            </li>
+            <li>
+              {/* <Link href="/terms-of-service">Terms of Service</Link> */}
+              <Link href="/faqs">FAQs</Link>
             </li>
           </ul>
         </div>
