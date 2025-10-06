@@ -1,5 +1,5 @@
 @use './variables' as *;
-@import "./components/mixins";
+@use "./components/mixins" as *;
 
 .contact-hero{
   @include banner;

@@ -1,4 +1,5 @@
 @use './variables.scss' as *;
+@use "./components/mixins" as *;
 @use './components/header.scss';
 @use './components/footer.scss';
 @use './components/button.scss';
@@ -10,10 +11,9 @@
 @use './industries.scss';
 @use './careers.scss';
 @use './FAQSection.scss';
+@use "./components/loader.scss";
+@use "./components/scrollToTop.scss";
 @import '../../public/libs/blaze-slider/blaze.css';
-@import "./components/mixins";
-@import "./components/loader.scss";
-@import "./components/scrollToTop.scss";
 * {
   margin: 0;
   padding: 0;
