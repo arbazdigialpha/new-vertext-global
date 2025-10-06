@@ -33,7 +33,7 @@ export default function Careers() {
       {/* Why Career with Us Section */}
       <WhyCareerWithUs />
       {/* Career Path Section */}
-      <CareerPath />
+      <CareerPath /> 
       {/* FAQ Section */}
       <FAQSection title="Careers FAQs" faqs={careersFaqs} />
     </main>
